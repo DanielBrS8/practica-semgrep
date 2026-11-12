@@ -1,0 +1,7 @@
+rules:
+  - id: no-print-in-prod
+    patterns:
+      - pattern: print(...)
+    message: "No uses print() en el codigo final. Usa un logger."
+    languages: [python]
+    severity: WARNING

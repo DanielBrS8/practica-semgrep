@@ -11,4 +11,4 @@ jobs:
       image: semgrep/semgrep
     steps:
       - uses: actions/checkout@v4
-      - run: semgrep scan --config .semgrep/my-rule.yaml --config p/python --config p/owasp-top-10 --error
+      - run: semgrep scan --config .semgrep/my-rule.yaml --config p/python --config p/owasp-top-ten --error
